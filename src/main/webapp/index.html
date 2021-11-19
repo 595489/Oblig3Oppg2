@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <h1>Trill trening</h1>
+    <div id="root">
+        <p>
+            <button data-dicebutton>Trill</button>
+        </p>
+        <p>
+            Resultat: <span data-diceoutput></span>
+        </p>
+    </div>
+    <script src="DiceController.js" type="text/javascript">
+        const controller = new DiceController("root");
+        document.addEventListener("DOMContentLoaded", controller.run, true);
+    </script>
+</body>
+
+</html>
