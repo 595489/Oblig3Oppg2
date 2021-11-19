@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Terning</title>
 </head>
 
 <body>
@@ -16,9 +16,10 @@
             Resultat: <span data-diceoutput></span>
         </p>
     </div>
-    <script src="DiceController.js" type="text/javascript">
+    <script src="DiceController.js" type="module">
         const controller = new DiceController("root");
-        document.addEventListener("DOMContentLoaded", controller.run, true);
+        document.addEventListener("DOMContentLoaded", controller.run(), true);
+        // window.onload = run();
     </script>
 </body>
 
