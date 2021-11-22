@@ -49,13 +49,13 @@
           btRef = document.getElementById(this._root).querySelector("data-dicebutton");
           btRef.addEventListener("click", this.rollDice);
           diceOutput = document.getElementById(this._root).querySelector("data-dicebutton");
-          return this.diceOutput.innerHtml = this._outputElement;
+          this.diceOutput.innerHtml = this._outputElement;
         }
   
         rollDice() {
           alert('Rolling Dice');
           Dice.roll;
-          return this._outputElement = Dice.getValue();
+          this._outputElement = Dice.getValue();
         }
   
       };
