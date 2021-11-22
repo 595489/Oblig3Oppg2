@@ -2,8 +2,6 @@
  * @author Isak Aasemoen Aardal
  */
 
-alert("DiceController top loaded");
-
 import Dice from "./Dice.js"
 
 export default class {
@@ -18,13 +16,11 @@ export default class {
   }
 
   run() {
-    alert("Running");
     var btRef = this._in.addEventListener("click", this.rollDice, true);
   }
 
   rollDice() {
     var dice = new Dice();
-    alert("rolling");
     dice.roll();
     var output = this._out.innerHTML = dice.getValue();
   }
