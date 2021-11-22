@@ -2,6 +2,8 @@
  * @author Isak Aasemoen Aardal
  */
 
+alert("Dice loaded");
+
 export default class {
     value;
 
