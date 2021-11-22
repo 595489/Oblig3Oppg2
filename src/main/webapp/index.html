@@ -10,17 +10,14 @@
     <h1>Trill trening</h1>
     <div id="root">
         <p>
-            <button data-dicebutton>Trill</button>
+            <button id="data-dicebutton">Trill</button>
         </p>
         <p>
-            Resultat: <span data-diceoutput></span>
+            Resultat: <span id="data-diceoutput"></span>
         </p>
     </div>
-    <script src="DiceController.js" type="module">
-        const controller = new DiceController("root");
-        document.addEventListener("DOMContentLoaded", controller.run(), true);
-        // window.onload = run();
-    </script>
+    <script src="DiceController.js" type="module"></script>
+    <script src="init.js" type="module"></script>
 </body>
 
 </html>

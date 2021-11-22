@@ -1,18 +1,20 @@
+import Dice from "./Dice.js"
+
 class DiceController
-    _root: "root"
+    _root: document.getElementById("root")
     _inputElement: document.getElementById(_root).querySelector("data-dicebutton")
     _outputElement: "no value"
 
-    constructor: (root = "root") ->
+    constructor: (root = document.getElementById("root")) ->
         @_root = root
         @run = @run.bind(@)
         @rollDice = @rollDice.bind(@)
     
     run: ->
         alert 'Running'
-        btRef = document.getElementById(@_root).querySelector("data-dicebutton")
+        btRef = @_root.querySelector("data-dicebutton")
         btRef.addEventListener("click", @rollDice)
-        diceOutput = document.getElementById(@_root).querySelector("data-dicebutton")
+        diceOutput = @_root.querySelector("data-dicebutton")
         @diceOutput.innerHtml = @_outputElement
 
 
