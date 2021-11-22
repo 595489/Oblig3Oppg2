@@ -2,7 +2,7 @@
  * @author Isak Aasemoen Aardal
  */
 
-alert("DiceController loaded");
+alert("DiceController top loaded");
 
 import Dice from "./Dice.js"
 
@@ -11,17 +11,17 @@ export default class {
   _in = document.getElementById(this._root).querySelector("data-dicebutton");
   _out;
 
-  constructor(root = "root"){
+  constructor(root) {
     this._root = root;
     this.run = this.run.bind(this);
   }
 
-  run(){
+  run() {
     alert("Running");
-    this.rollDice()
+    this.rollDice();
   }
 
-  rollDice(){
+  rollDice() {
     alert("rolling");
   }
 }
